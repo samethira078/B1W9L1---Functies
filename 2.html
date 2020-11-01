@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function berekenen(som, nummer1, nummer2){
+				if(som == "optellen"){
+					document.write(nummer1 + nummer2+ "<br>");
+				}
+				else if(som == "aftrekken"){
+					document.write(nummer1 - nummer2+ "<br>");
+				}
+				else if(som == "vermenigvuldigen"){
+					document.write(nummer1 * nummer2+ "<br>");
+				}
+				else if(som == "delen"){
+					document.write(nummer1 / nummer2+ "<br>");
+				}
+				else if(som == "increment"){
+					document.write(nummer1 + nummer2+ 1+ "<br>");
+				}
+				else if(som == "decrement"){
+					document.write(nummer1 + nummer2- 1+ "<br>");
+				} else {
+					alert("Error");
+				}
+		}
+		berekenen("optellen", 121, 34);
+		berekenen("aftrekken", 3131, 4224);
+		berekenen("vermenigvuldigen", 4242, 1);
+		berekenen("delen", 12112, 4242);
+		berekenen("increment", 2121, 2121);
+		berekenen("decrement", 2121, 2121);
+	</script>
+</body>
+</html>

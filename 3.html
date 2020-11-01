@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function gebruiker(){
+			while(true){
+        		var naam = prompt("Naam?");
+        		var leeftijd = prompt("Leeftijd?");
+        		var doorgaan = prompt("Doorgaan? Typ stop om te stoppen en druk op enter om te verder te gaan!");
+        		document.write("Hallo " + naam + " je bent " + leeftijd + " jaar oud! <br>");
+        		if(doorgaan == "stop"){
+        			break;
+        		} else {
+        			continue;
+        		}
+			}
+		}
+		gebruiker();
+	</script>
+</body>
+</html>
